@@ -13,7 +13,7 @@ az group create --name CursoCosmosDB --location eastus2
 
 az group delete --name CursoCosmosDB --yes --no-wait
 
-Crear Cuenta CosmosDB
+Crear Cuenta CosmosDB.
 
 az cosmosdb create --name fanogarcosmosdb --resource-group CursoCosmosDB
 
