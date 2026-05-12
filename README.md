@@ -4,10 +4,10 @@ En este repositorio de GitHub podrás encontrar los ejercicios y recuroso para d
 
 Autores:
 Dámaris :)
-Óscar NB !!!!!
 
 Samu :3
 
 Adrian
 
 yassin
+Daniela
