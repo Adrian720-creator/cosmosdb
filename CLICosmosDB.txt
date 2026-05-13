@@ -1,6 +1,6 @@
 Comandos CLI Azure para Administrar y Gestionar CosmosDB en Azure
 
-Conexióna a Azure:
+Conexión a Azure:
 
 az login 
 az logout
@@ -18,4 +18,7 @@ Pasos para crear base de datos en cosmos db
 az cosmosdb create --name fanogarcosmosdb --resource-group CursoCosmosDB
 
 2 Crear la base de datos:
-az cosmosdb sql database create --account-name fanogarcosmosdb --resource-group CursoCosmosDB --name fancosmosDB
+az cosmosdb sql database create --account-name fanogarcosmosdb --resource-group CursoCosmosDB --name fancosmosdb
+
+Crear contenedor dentro de la base de datos
+az cosmosdb sql container create --account-name fanogarcosmosdb --resource-group CursoCosmosDB --database-name fancosmosdb --name contenedorfanogar --partition-key-path "/id" --throughput 400
