@@ -2,8 +2,18 @@ Comandos Git
 
 git remote -v
 
-git remote add upstream https://github.com/Adrian720-creator/skills-introduction-to-github.git
+git remote add upstream https://github.com/JoseM3475/cosmosdb.git
 
 git pull upstream
+
+git merge upstream/main
+
+# Actualizar repositorio remoto (dle que hice fork) en el local.
+
+git remote -v
+
+git fetch upstream
+
+git checkout main
 
 git merge upstream/main
