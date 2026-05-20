@@ -12,7 +12,7 @@ git merge upstream/main
 
 git remote -v
 
-git fecht upstream
+git fetch upstream
 
 git checkout main
 
