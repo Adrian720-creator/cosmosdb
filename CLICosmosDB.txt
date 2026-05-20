@@ -5,18 +5,6 @@ Conexión a Azure:
 az login 
 az logout
 
-<<<<<<< HEAD
-=======
-az ad signed-in-user show --query id
-
-Activar entorno en Python:
-
-python -m venv venv
-.\venv\Scripts\Activate.
-
-pip list
-
->>>>>>> upstream/main
 Grupos de Recursos
 
 az group list --output table
