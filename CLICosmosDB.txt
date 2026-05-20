@@ -5,6 +5,18 @@ Conexión a Azure:
 az login 
 az logout
 
+<<<<<<< HEAD
+=======
+az ad signed-in-user show --query id
+
+Activar entorno en Python:
+
+python -m venv venv
+.\venv\Scripts\Activate.
+
+pip list
+
+>>>>>>> upstream/main
 Grupos de Recursos
 
 az group list --output table
@@ -22,3 +34,33 @@ az cosmosdb sql database create --account-name fanogarcosmosdb --resource-group 
 
 Crear contenedor dentro de la base de datos
 az cosmosdb sql container create --account-name fanogarcosmosdb --resource-group CursoCosmosDB --database-name fancosmosdb --name contenedorfanogar --partition-key-path "/id" --throughput 400
+<<<<<<< HEAD
+=======
+
+# Asignar Role Cosmos DB Account Contributor
+DocumentDB Account Contributor es un rol de control plane (gestión) para Cosmos DB.
+
+✅ Puede administrar completamente la cuenta de Cosmos DB (infraestructura)
+❌ NO puede acceder a los datos (ni leer ni escribir items)
+
+Crear / eliminar cuentas de Cosmos DB
+Modificar configuración del account
+Escalar throughput (RU/s)
+Configurar replicación y regiones
+Configurar redes (firewall, private endpoints)
+Gestionar backups, métricas, alerts
+
+az role assignment create \
+  --assignee <GROUP_OBJECT_ID> \
+  --role "DocumentDB Account Contributor" \
+  --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/<RESOURCE_GROUP>/providers/Microsoft.DocumentDB/databaseAccounts/<COSMOS_ACCOUNT>
+
+
+
+az cosmosdb sql role assignment create \
+  --account-name <COSMOS_ACCOUNT> \
+  --resource-group <RESOURCE_GROUP> \
+  --scope "/" \
+  --principal-id <USER_OR_GROUP_OBJECT_ID> \
+  --role-definition-id 00000000-0000-0000-0000-000000000002
+>>>>>>> upstream/main
